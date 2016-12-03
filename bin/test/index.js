@@ -47,9 +47,7 @@ let test2 = {
 let test3 = JSON.parse(JSON.stringify(test2));
 let watchedTest1 = WatchWithProxy.Watcher.Watch(new test1(), new WatchWithProxy.WatchOptions(), listener);
 let watchedTest2 = WatchWithProxy.Watcher.Watch(test2, new WatchWithProxy.WatchOptions(), listener);
-let options = new WatchWithProxy.WatchOptions();
-options.levels = 1;
-let watchedTest3 = WatchWithProxy.Watcher.Watch(test3, options, listener);
+let watchedTest3 = WatchWithProxy.Watcher.Watch(test3, new WatchWithProxy.WatchOptions(1), listener);
 console.log("**** TEST1 Tests ****");
 console.log("");
 console.log("Updating test.a from 2 to 7");

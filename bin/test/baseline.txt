@@ -1,0 +1,55 @@
+**** TEST1 Tests ****
+
+Updating test.a from 2 to 7
+Updated callback! sender:  test1 property: a old: 2 new: 7
+New test.a value:  7
+
+Updating test.b.a from 4 to 8
+Updated callback! sender:  embeddedtest property: a old: 4 new: 8
+New test.b.a value:  8
+
+Adding to test.b.d array
+Updated callback! sender:  a,b,c property: push old: undefined new: [ 'd' ]
+New test.b.d value:  [ 'a', 'b', 'c', 'd' ]
+
+Popping from test.b.d array
+Updated callback! sender:  a,b,c property: pop old: d new: undefined
+New test.b.d value:  [ 'a', 'b', 'c' ]
+
+Popping from test.b.d array
+Updated callback! sender:  a,b property: pop old: c new: undefined
+New test.b.d value:  [ 'a', 'b' ]
+
+
+**** TEST2 Tests ****
+
+Updating test.a from '123' to '456'
+Updated callback! sender:  [object Object] property: a old: 123 new: 456
+New test.a value:  456
+
+Adding new property d with value 'hi'
+Updated callback! sender:  [object Object] property: d old: undefined new: hi
+New test.d value:  hi
+
+Modifying 2nd level test.c.b[0].b from 0 to 6
+Updated callback! sender:  [object Object] property: b old: 2 new: 6
+New test.c.a value:  6
+
+
+**** TEST3 Tests (level = 1) ****
+
+Updating test.a from '123' to '456'
+Updated callback! sender:  [object Object] property: a old: 123 new: 456
+New test.a value:  456
+
+Modifying 2nd level test.c.a from true to false
+Updated callback! sender:  [object Object] property: a old: true new: false
+New test.c.a value:  false
+
+Modifying 2nd level test.c.b[0].b from 0 to 6
+New test.c.a value:  6
+
+
+
+
+Total listener calls 10

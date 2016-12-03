@@ -1,5 +1,9 @@
 
 export class WatchOptions {
+    constructor(levels: number = -1, properties: string[] = []) {
+        this.levels = levels;
+        this.properties = properties;
+    }
     levels: number = -1; //  -1 means no limit
     properties: string[] = []; // array with properties to watch.
 }

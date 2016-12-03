@@ -1,4 +1,5 @@
 export declare class WatchOptions {
+    constructor(levels?: number, properties?: string[]);
     levels: number;
     properties: string[];
 }

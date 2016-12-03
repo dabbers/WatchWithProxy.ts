@@ -51,9 +51,7 @@ let watchedTest1 = WatchWithProxy.Watcher.Watch(new test1(), new WatchWithProxy.
 
 let watchedTest2 = WatchWithProxy.Watcher.Watch(test2, new WatchWithProxy.WatchOptions(), listener);
 
-let options = new WatchWithProxy.WatchOptions();
-options.levels = 1;
-let watchedTest3 = WatchWithProxy.Watcher.Watch(test3, options, listener);
+let watchedTest3 = WatchWithProxy.Watcher.Watch(test3, new WatchWithProxy.WatchOptions(1), listener);
 
 console.log( "**** TEST1 Tests ****" );
 console.log("");

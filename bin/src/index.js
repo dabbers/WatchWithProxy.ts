@@ -1,8 +1,10 @@
 "use strict";
 class WatchOptions {
-    constructor() {
+    constructor(levels = -1, properties = []) {
         this.levels = -1;
         this.properties = [];
+        this.levels = levels;
+        this.properties = properties;
     }
 }
 exports.WatchOptions = WatchOptions;
