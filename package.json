@@ -1,0 +1,24 @@
+{
+  "name": "watchwithproxy",
+  "version": "1.0.0",
+  "description": "Watch for changes in an object with a proxy",
+  "main": "bin/src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node bin/test/index.js"
+  },
+  "keywords": [
+    "watch",
+    "proxy",
+    "object",
+    "change",
+    "detection"
+  ],
+  "author": "David <me@davidbarajsa.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "0.0.2"
+  }
+}

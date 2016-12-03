@@ -1,0 +1,19 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "module": "commonjs",
+        "outDir": ".\\bin\\",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "target": "es2015",
+        "noImplicitReturns": true,
+        "declaration": true
+    },
+    "exclude": [
+        "node_modules",
+        "bin"
+    ]
+}
