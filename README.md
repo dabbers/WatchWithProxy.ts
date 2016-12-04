@@ -5,7 +5,7 @@ The class itself is fairly simple. It's similar to Watch.js, but written in Type
 
 ## Usage
 
-```
+```javascript
 import * as WatchWithProxy from '../src/';
 
 let options = new WatchWithProxy.WatchOptions();
